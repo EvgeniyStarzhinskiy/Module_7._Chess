@@ -42,7 +42,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
+        System.out.println(Math.pow(2, 3));
         ChessBoard board = buildBoard();
         Scanner scanner = new Scanner(System.in);
         System.out.println("""

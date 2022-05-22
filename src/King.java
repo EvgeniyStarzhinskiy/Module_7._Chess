@@ -34,7 +34,7 @@ public class King extends ChessPiece {
         for (int i = 7; i > -1; i--) {
             for (int j = 0; j < 8; j++) {
                 if ((chessBoard.board[i][j] != null) &&
-                        (chessBoard.board[i][j] != selfPiece) &&
+                        !chessBoard.board[i][j].equals(selfPiece) &&
                         !selfPiece.getColor().equals(chessBoard.board[i][j].getColor()) &&
                         chessBoard.board[i][j].hasAttackToPosition(chessBoard, i, j, line, column)) {
                     isUnderAttack = true;
